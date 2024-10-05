@@ -5,20 +5,24 @@ This project automates the process of generating wordlists using Crunch and perf
 
 Disclaimer: This tool should only be used on systems that you own or have explicit permission to test. Unauthorized use of these tools is illegal and unethical.
 
-Features
-Generates custom wordlists based on specific parameters (length, character set).
-Automates password brute-forcing for services like FTP, SSH, and others using Hydra.
-Stores audit results in a log file for review.
-Installation: 
-Requirements- 
+Features:
+--Generates custom wordlists based on specific parameters (length, character set).
+
+--Automates password brute-forcing for services like FTP, SSH, and others using Hydra.
+
+--Stores audit results in a log file for review.
+
+Installation:
 Kali Linux with:
 
            Crunch: Pre-installed in Kali Linux for wordlist generation.
            Hydra: Pre-installed in Kali Linux for brute-force attacks.
            Python 3.x: To run the automation script.
 
-      Parameters 
       
+      
+ Parameters  
+ 
 -- min_length: Minimum length of passwords to generate.
 
 --max_length: Maximum length of passwords to generate.
@@ -31,7 +35,11 @@ Kali Linux with:
 
 --username: The username for login attempts.
 
-Output :
+You can run the script with the following command-line arguments:
+python3 password_audit.py --min_length <min> --max_length <max> --charset <chars> --service <service> --ip_address <target_ip> --username <user>
+
+
+
 Generated wordlists are saved in the specified output file (default: wordlist.txt).
 
 Audit results (success, failures, and logs) are stored in audit_log.txt.
