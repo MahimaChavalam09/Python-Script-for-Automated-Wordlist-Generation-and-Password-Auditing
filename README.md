@@ -16,7 +16,7 @@ Kali Linux with:
            Hydra: Pre-installed in Kali Linux for brute-force attacks.
            Python 3.x: To run the automation script.
 
-      Parameters:
+      Parameters 
 --min_length: Minimum length of passwords to generate.
 --max_length: Maximum length of passwords to generate.
 --charset: The character set to use for wordlist generation (e.g., abc123).
